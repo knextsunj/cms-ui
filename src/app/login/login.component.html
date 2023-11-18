@@ -1,0 +1,84 @@
+<div>
+<!-- <div style="height: 80vh" class="bg"> -->
+    <mat-card [ngStyle]="{ 'height':'100%', 'backgroundImage':'url(../assets/mars2.jpg)','backgroundRepeat':'no-repeat','backgroundSize': 'cover',  'width': '100%'}">
+    <br />
+    <br />
+    <br />
+    <br />
+    <app-header></app-header>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+        <mat-card-title>
+        <h1>{{title}}</h1>    
+        </mat-card-title>
+        <br />
+        <br />
+        <mat-card-content>
+            <form [formGroup]="authForm" (ngSubmit)="submit()">
+            <p *ngIf="error" class="error">
+                {{ error }}
+            </p>
+            <p>
+                <label>Username</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <mat-form-field appearance="fill">
+                <input type="text" matInput placeholder="Username" formControlName="username">
+                </mat-form-field>
+            </p>
+    
+            <p>
+                <label>Password</label> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <mat-form-field appearance="fill">
+                <input type="password" matInput placeholder="Password" formControlName="password">
+                </mat-form-field>
+            </p>
+
+            <p>
+                <button class="button" type="submit" mat-raised-button>{{title}}</button>
+             </p> 
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            </form>
+        </mat-card-content>
+    </mat-card>
+</div>

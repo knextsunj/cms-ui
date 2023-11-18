@@ -1,0 +1,29 @@
+<div>
+    <div>
+    <br />
+    <br />
+    <app-header></app-header>
+    <app-menu></app-menu>
+    <br />
+    <br />
+ 
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <mat-card-title align="center">
+    <h1>Add Country</h1>
+    </mat-card-title>
+    <br>
+    <br>
+    <mat-card-content align="center">
+        <form (ngSubmit)="onSubmit()"> 
+            <label>Name:</label> 
+            <input type="text" name="name"  [(ngModel)]="countryName"/>
+            <p>You Entered: {{countryName}}</p>
+            <button type="submit">Save</button>
+         </form>  
+      </mat-card-content> 
+</div>
